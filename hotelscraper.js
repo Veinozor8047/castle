@@ -24,7 +24,8 @@ request(url, (error,response,html)=>{
         //console.log(home);
         home('#countryF').find("h3:contains('France')").parent().find('.listDiamond > li').each( function (i, element) {
         var pusher=home(this).find("a").first()[0].attribs.href
-            console.log(i+1)
+        //var pusher = home(this).text()
+        console.log(i+1)
             console.log(pusher)
             hotels.push(pusher)
         });

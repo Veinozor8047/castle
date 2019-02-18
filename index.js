@@ -1,6 +1,5 @@
-//Required libraries
-const scrape = require('./ScrapeRelaisChateaux.js');
-const michelinScrape = require('./ScrapeMichelin.js');
+const scrape = require('./hotelscraper.js');
+const michelinScrape = require('./webscraper.js');
 let fs = require('fs');
 
 'use strict';
@@ -21,8 +20,7 @@ function findMutualChefsAndPCs(ListeHotels, ListeMichelin) {
     }
     return HotelsEtoiles;
 }
-
-console.log("Fichier écrit.");
+console.log("Fill filled");
 
 function ajouterLigne()
 {
